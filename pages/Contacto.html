@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/leo_club_logo.png">
+    <link rel="styLesheet" href="../css/estilos.css">
+    <title>Club Leo Turma - Contacto</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="../index.html">
+            <img id="logo" src="../images/leologoblancopng.png">
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="Nuestras_Actividades.html">Nuestras Actividades</a></li>
+            <li><a href="Sobre_Nosotros.html">Sobre Nosotros</a></li>
+            <li><a href="Sobre_los_Clubes_Leo.html">Sobre los Clubes Leo</a></li>
+            <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <p>
+            "El más pequeño acto de amabilidad vale más que la más grande intención"<br>
+            -Oscar Wilde
+        </p>
+    </header>
+
+    <main>
+        <form action="procesar.php" name="contacto" method="post">
+            <fieldset>
+                <legend>¿Querés sumar tu ayuda?</legend>
+                <h3>¡Contáctanos!</h3>
+
+                <p>
+                <label> Nombre:
+                    <input type="text"name="nombre" placeholder="Nombre" required>
+                </label>
+                </p>
+
+                <p>
+                <label> Apellido:
+                    <input type="text"name="apellido" placeholder="Apellido" required>
+                </label>
+                </p>
+
+                <p>
+                <label> Email:
+                    <input type="email"name="email" placeholder="ejemplo@mail.com" required>
+                </label>
+                </p>
+
+                <p>
+                <label> Celular:
+                    <input type="number"name="celular" placeholder="3871111111" required>
+                </label>
+                </p>
+
+                <p>
+                <h5>¿Cómo quieres ayudar?</h5>
+                <label for="comoayudar">Ser socio</label>
+                    <input type="radio"name="comoayudar" value="Ser socio" required> <br>
+
+                <label for="comoayudar">Donaciones de ropa/comida</label>
+                    <input type="radio"name="comoayudar" value="Donaciones" required><br>
+
+                <label for="comoayudar">Participar en alguna actividad</label>
+                    <input type="radio"name="comoayudar" value="Participar en alguna activdad" required><br>
+
+                <label for="comoayudar">Sugerir una actividad</label>
+                    <input type="radio"name="comoayudar" value="Sugerir una actividad" required><br>
+
+                <label for="comoayudar">Donaciones económicas</label>
+                    <input type="radio"name="comoayudar" value="Donaciones económicas" required>
+                </p>
+
+                <p>
+                <h5>Más información relevante</h5><br>
+                <textarea name="otra información" placeholder="Escríbenos..."></textarea>
+                </p>
+
+                <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Borrar datos</button>
+                </p>
+            </fieldset>
+        </form>
+
+        <div id="siguenos">
+            <h3>¡Síguenos en nuestras redes sociales!</h3>
+            <h2>@Club Leo TURMA</h2>
+            <a href="https://www.facebook.com/club.turma/" target="_blank">
+                <img src="../images/fb.png">
+            </a>
+            <a href="https://www.instagram.com/clubleoturma/" target="_blank">
+                <img src="../images/ig.png">
+            </a>
+        </div>
+
+    </main>
+
+    <footer>
+        <section>
+            <h4>Club Leo T.U.R.M.A</h4>
+            <h5>Auspiciado por el Club de Leones - SALTA NORTE</h5>
+            <h5>Manuela G. de Todd 678, Salta - Argentina</h5>
+            <h6>Lions Club International</h6>
+        </section>
+        <div class="redes">
+            <a href="https://www.facebook.com/club.turma/photos/?ref=page_internal" target="_blank">
+                <img src="../images/fb_yellow.png">
+            </a>
+            <a href="https://www.instagram.com/clubleoturma/" target="_blank">
+                <img src="../images/ig_yellow.png">
+            </a>
+        </div>
+    </footer>
+
+</body>

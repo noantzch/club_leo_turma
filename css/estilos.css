@@ -1,0 +1,443 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kantumruy+Pro:wght@200&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&family=Readex+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/4931029.jpg);
+    background-position: cover;
+    background-attachment: fixed;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav{
+    background-color: #641E16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#logo{
+    width: 3.75em;
+    height: 3.12em;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: #fac156;
+    text-shadow: 3px 3px 6px #a71a4e;
+}
+
+nav li{
+    display: inline-block;
+    font-weight:bolder;
+    font-size: 1.1em;
+    padding: 0 4.4em;  
+}
+
+
+
+header{
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    text-shadow: 3px 3px 6px white;
+    font-style: italic;
+    width: 100%;
+
+    background-image: url(../images/manos2.png);
+    background-position: top;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+header >*{
+    padding: 1.5em;
+}
+
+
+.header-index{
+    background-image: url(../images/servicio_con_banners.jpg);
+    background-size: 100%;
+    background-position: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Readex Pro', sans-serif;
+    text-shadow: 3px 3px 13px black;
+    width: 100%;
+    padding: 40px 150px;
+
+}
+#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#fac156;
+    opacity: .5;
+}
+.header-index >*{
+    padding-right: 0px;
+    padding-left: 70px;
+}
+#lema{
+    font-style: normal;
+    font-size: 4em;
+    text-align: justify;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    z-index: 1;
+
+    animation: fadeInLeft;
+    animation-duration: 1s;
+}
+#lema-texto{
+    z-index: 1;
+    animation: fadeInRight;
+    animation-duration: 1s;
+}
+
+@media (max-width: 768px){
+    .header-index{
+        flex-direction: column;
+        padding: 20px 1px;
+    }
+    .header-index >*{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}
+
+.porqueserleo{
+    padding: 30px 100px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bolder;
+    
+}
+.porqueserleo >*{
+    padding: 40px;
+}
+.porqueserleo img{
+    border-radius:50px;
+}
+.porqueserleo h2{
+    font-size: 1.8em;
+    letter-spacing: 10px;
+    padding: 40px;
+}
+.porqueserleo p{
+    text-align: justify;
+}
+
+@media (max-width:768px){
+    .porqueserleo{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .porqueserleo >*{
+        padding: 5px;
+    }
+}
+article{
+    font-size: 1.6em;
+
+    padding: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+article >*{
+    padding: 20px;
+    text-align: justify;
+}
+
+article img{
+    width: 80%;
+    border-radius: 40px;
+    border:  2px groove black;
+}
+
+
+.grid-container-opinionesleo{
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(2 1fr);
+    grid-template-areas: 
+    "luciana lucca matias"
+    "macarena noel gimena"
+    ;
+}
+
+.opinionesleo{
+    background-color: #fec759;
+    border-radius: 0.5em;
+    box-shadow: 2px 2px 20px #641E16;
+
+    padding: 0.5em;
+    margin: 1em;
+
+    font-family: 'Edu QLD Beginner';
+    font-size: 1.2em;
+    text-align: justify;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.opinionesleo img{
+    width: 10em;
+    border-radius: 1em;
+    box-shadow: 1px 1px 10px black;
+    padding: 0;
+}
+
+.opinionesleo >*{
+    padding: 0.6em;
+}
+
+.opinion1{
+    grid-area: luciana;
+}
+.opinion2{
+    grid-area: lucca;
+}
+.opinion3{
+    grid-area: matias;
+}
+.opinion4{
+    grid-area: macarena;
+}
+.opinion5{
+    grid-area: noel;
+}
+.opinion6{
+    grid-area: gimena;
+}
+
+@media(max-width:768px){
+    .grid-container-opinionesleo{
+        padding: 4em;
+        display: grid;
+        grid-template-columns: repeat(1 1fr);
+        grid-template-rows: repeat(6 1fr);
+        grid-template-areas: 
+        "luciana"
+        "lucca"
+        "matias"
+        "macarena"
+        "noel"
+        "gimena"
+    }
+    .opinionesleo{
+        flex-direction: column;
+        padding: 1em;
+    }
+    .opinionesleo img{
+        width: 20em;
+    }
+}
+.titles{
+    font-size: 45px;
+    text-align: center;
+    color: #641E16;
+    padding: 28px 18px;
+    text-shadow: 3px 3px 3px grey;
+    
+}
+
+.actividades-container{
+    width: 90%;
+    text-align: center;
+    margin: 2em 4.5em;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas: 
+    "act1 act1 act1 info"
+    "act2 act2 act2 info"
+    "act3 act3 act3 info"
+    "act4 act4 act5 act5"
+    ;
+}
+
+@media (max-width:768px){
+    .actividades-container{
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1 1fr);
+        grid-template-rows: repeat(5 1fr);
+        grid-template-areas: 
+        "act1"
+        "act2"
+        "act3"
+        "act4"
+        "act5";
+    }
+}
+
+.actividades{
+    margin: 0.5em;
+    padding: 0.5em 0.5em;
+    border: 5px groove grey;
+    border-radius: 1em;
+    background-color: #641E16;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+
+    font-size: 1.4em;
+    color:white;
+    text-align: justify;
+}
+
+.actividades div{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+}
+
+.actividades img{
+    width: 20em;
+    height: 9em;
+    padding: 0.3em;
+    border-radius: 0.8em;
+}
+
+#info{
+    grid-area: info;
+    background-image: url(../images/info-background.png);
+    background-position: center;
+    background-size: cover;
+    margin: 0.9em;
+    padding-top: 8.5em;
+    padding-bottom: 0.2em;
+    padding-left: 0.4em;
+    padding-right: 0.4em;
+    font-size: 1.7em;
+    text-align: center;
+    font-style: italic;
+    text-shadow: 0.1em 0.1em 0.1em white;
+}
+#info >*{
+    padding: 1em;
+}
+
+@media (max-width:768px){
+    #info{
+        display: none;
+    }
+}
+.actividad1{
+    grid-area: act1;
+}
+.actividad2{
+    grid-area: act2;
+}
+.actividad3{
+    grid-area: act3;
+}
+.actividad4{
+    grid-area: act4;
+}
+.actividad5{
+    grid-area: act5;
+}
+
+.cona{
+    text-align: center;
+}
+
+form{
+    width: 100%;
+    text-align: center;
+    font-size: 1.7em;
+    padding: 28px;
+    margin: 0px;
+
+
+}
+
+form >*{
+    color: black;
+    text-shadow: 5px 5px 5px grey;
+    padding: 1em;
+}
+
+form fieldset p{
+    padding: 0.3em;
+}
+
+#siguenos{
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 2em;
+    color: #641E16;
+    text-shadow: 2px 2px 2px white;
+    background-image: url(../images/manos2.png);
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#siguenos >*{
+    padding: 1.5em;
+}
+#siguenos img{
+    width: 10%;
+}
+
+footer{
+    width: 100%;
+    background-color: #641E16;
+    color: #fac156;
+    text-shadow: 3px 3px 5px black;
+    padding: 5px 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.redes img{
+    width: 60px;
+}
