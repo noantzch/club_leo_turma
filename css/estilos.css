@@ -272,12 +272,16 @@ article img{
     }
 }
 .titles{
-    font-size: 45px;
+    font-size: 2.2em;
     text-align: center;
     color: #641E16;
     padding: 28px 18px;
-    text-shadow: 3px 3px 3px grey;
+    text-shadow: 3px 3px 3px white;
+    transition: text-shadow 1s;
     
+}
+.titles:hover{
+    text-shadow: 3px 3px 3px grey;
 }
 
 .actividades-container{
@@ -394,6 +398,35 @@ form{
 
 
 }
+
+#foto_nosotros{
+    text-align: center;
+}
+#foto_nosotros p{
+    color: #fac156;
+    font-size: 1em;
+    font-weight: bolder;
+    font-style: italic;
+    text-shadow: 2px 2px 3px white;
+    border: 2px solid #fac156;
+    opacity: 0;
+    transition: opacity 1s;
+}
+#foto_nosotros p:hover{
+    opacity: 1;
+}
+#foto_nosotros img{
+    animation-name: foto_nosotros;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+}
+
+@keyframes foto_nosotros{
+    0%{width: 40%;}
+    100%{width: 80%;}
+}
+
 
 form >*{
     color: black;
