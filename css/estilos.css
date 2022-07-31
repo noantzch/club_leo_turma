@@ -16,33 +16,30 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-nav{
+.navbar{
+    padding: 0;
+}
+.navbar-collapse{
+    flex-grow: inherit;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #fec759;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 3px;
+    font-size: 1.1em;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.container-fluid{
     background-color: #641E16;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
 #logo{
     width: 3.75em;
     height: 3.12em;
+    display: block;
 }
-
-nav ul a{
-    text-decoration: none;
-    color: #fac156;
-    text-shadow: 3px 3px 6px #a71a4e;
-}
-
-nav li{
-    display: inline-block;
-    font-weight:bolder;
-    font-size: 1.1em;
-    padding: 0 4.4em;  
-}
-
-
 
 header{
     font-size: 1.5em;
@@ -179,8 +176,6 @@ article >*{
 
 article img{
     width: 80%;
-    border-radius: 40px;
-    border:  2px groove black;
 }
 
 
@@ -399,6 +394,16 @@ form{
 
 }
 
+.slider-actividades{
+    width: 60%;
+    text-align: center;
+}
+@media (max-width: 768px){
+    .slider-actividades{
+        width: 80%;
+    }
+}
+
 #foto_nosotros{
     text-align: center;
 }
@@ -463,6 +468,8 @@ footer{
     width: 100%;
     background-color: #641E16;
     color: #fac156;
+    font-size: 0.8em;
+    font-weight: bold;
     text-shadow: 3px 3px 5px black;
     padding: 5px 10px;
 
@@ -471,6 +478,8 @@ footer{
     justify-content: space-between;
 }
 
-.redes img{
-    width: 60px;
+i{
+    font-size: 4em;
+    color:#fac156;
+    padding: 0.2em;
 }
