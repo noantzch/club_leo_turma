@@ -59,6 +59,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 header p {
   -webkit-animation: fadeIn;
           animation: fadeIn;
@@ -102,7 +103,7 @@ header p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #fec759;
+  background: #fac156;
   opacity: 0.5;
 }
 
@@ -151,20 +152,23 @@ header p {
   text-align: center;
   font-weight: bolder;
 }
+
+.porqueserleo > * {
+  padding: 40px;
+}
+
 .porqueserleo img {
   border-radius: 50px;
 }
+
 .porqueserleo h2 {
   font-size: 1.8em;
   letter-spacing: 10px;
   padding: 40px;
 }
+
 .porqueserleo p {
   text-align: justify;
-}
-
-.porqueserleo > * {
-  padding: 40px;
 }
 
 @media (max-width: 768px) {
@@ -184,9 +188,6 @@ article {
   justify-content: center;
   align-items: center;
 }
-article img {
-  width: 80%;
-}
 
 @media (max-width: 768px) {
   article {
@@ -198,6 +199,10 @@ article img {
 article > * {
   padding: 20px;
   text-align: justify;
+}
+
+article img {
+  width: 80%;
 }
 
 @media (max-width: 768px) {
@@ -236,6 +241,7 @@ article > * {
   justify-content: space-between;
   align-items: center;
 }
+
 .opinionesleo img {
   width: 10em;
   border-radius: 1em;
@@ -299,6 +305,7 @@ article > * {
   text-shadow: 3px 3px 3px white;
   transition: text-shadow 1s;
 }
+
 .titles:hover {
   text-shadow: 3px 3px 3px grey;
 }
@@ -336,11 +343,13 @@ article > * {
   color: white;
   text-align: justify;
 }
+
 .actividades div {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .actividades img {
   width: 20em;
   height: 9em;
@@ -397,6 +406,14 @@ article > * {
   text-align: center;
 }
 
+form {
+  width: 100%;
+  text-align: center;
+  font-size: 1.7em;
+  padding: 28px;
+  margin: 0px;
+}
+
 .slider-actividades {
   width: 60%;
   text-align: center;
@@ -417,21 +434,14 @@ article > * {
     width: 90%;
   }
 }
-form {
-  width: 100%;
-  text-align: center;
-  font-size: 1.7em;
-  padding: 28px;
-  margin: 0px;
-}
-form fieldset p {
-  padding: 0.3em;
-}
-
 form > * {
   color: black;
   text-shadow: 5px 5px 5px grey;
   padding: 1em;
+}
+
+form fieldset p {
+  padding: 0.3em;
 }
 
 #siguenos {
@@ -443,18 +453,19 @@ form > * {
   color: #641E16;
   text-shadow: 2px 2px 2px white;
 }
-#siguenos img {
-  width: 10%;
-}
 
 #siguenos > * {
   padding: 1.5em;
 }
 
+#siguenos img {
+  width: 10%;
+}
+
 footer {
   width: 100%;
   background-color: #641E16;
-  color: #fec759;
+  color: #fac156;
   font-size: 0.8em;
   font-weight: bold;
   text-shadow: 3px 3px 5px black;
@@ -466,6 +477,6 @@ footer {
 
 i {
   font-size: 4em;
-  color: #fec759;
+  color: #fac156;
   padding: 0.2em;
 }/*# sourceMappingURL=estilos.css.map */
