@@ -41,7 +41,7 @@ body {
 }
 
 header {
-  font-size: 1.5em;
+  font-size: 1.3em;
   text-align: center;
   color: white;
   font-style: italic;
@@ -136,6 +136,7 @@ header p {
   .header-index {
     flex-direction: column;
     padding: 20px 1px;
+    font-size: 0.8em;
   }
   .header-index > * {
     padding-right: 0px;
@@ -171,6 +172,7 @@ header p {
   .porqueserleo {
     flex-direction: column;
     padding: 30px;
+    font-size: 1.2em;
   }
   .porqueserleo > * {
     padding: 5px;
@@ -284,10 +286,15 @@ article > * {
     width: 70%;
   }
   .opinionesleo {
-    width: 80%;
+    width: 98%;
     margin-top: 0.2em;
-    margin-left: 4em;
-    margin-right: 3.5em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-bottom: 1em;
+    flex-direction: column;
+  }
+  .opinionesleo img {
+    width: 15.7em;
   }
 }
 .titles {
@@ -329,32 +336,55 @@ article > * {
   padding: 0.8em 0.8em;
   border-radius: 1em;
   background-color: #641E16;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(3 1fr);
+  grid-template-areas: "actividad actividad" "foto texto" "foto texto";
   align-items: center;
   font-size: 1.1em;
   color: white;
   text-align: justify;
 }
-.actividades div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.actividades h3 {
+  grid-area: actividad;
+  text-align: center;
 }
 .actividades img {
-  width: 20em;
-  height: 9em;
+  grid-area: foto;
+  width: 90%;
   padding: 0.3em;
   border-radius: 0.8em;
 }
+.actividades p {
+  grid-area: texto;
+}
 
+@media (max-width: 768px) {
+  .actividades {
+    display: grid;
+    grid-template-columns: repeat(1 1fr);
+    grid-template-rows: repeat(3 1fr);
+    grid-template-areas: "actividad" "foto" "texto";
+  }
+  .actividades h3 {
+    grid-area: actividad;
+    text-align: center;
+  }
+  .actividades img {
+    grid-area: foto;
+    margin: 0.5em 1em;
+  }
+  .actividades p {
+    grid-area: texto;
+  }
+}
 #info {
   grid-area: info;
   background-image: url(../images/info-background.png);
   background-position: center;
   background-size: cover;
   margin: 0.9em;
-  padding-top: 11em;
+  padding-top: 14em;
   padding-bottom: 0.2em;
   padding-left: 0.4em;
   padding-right: 0.4em;
@@ -416,11 +446,14 @@ article > * {
   #foto_nosotros {
     width: 90%;
   }
+  .videos {
+    width: 100%;
+  }
 }
 form {
   width: 100%;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.5em;
   padding: 28px;
   margin: 0px;
 }
@@ -468,4 +501,10 @@ i {
   font-size: 4em;
   color: #fec759;
   padding: 0.2em;
+}
+
+@media (max-width: 768px) {
+  footer {
+    font-size: 0.5em;
+  }
 }/*# sourceMappingURL=estilos.css.map */
