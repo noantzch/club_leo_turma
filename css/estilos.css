@@ -40,13 +40,9 @@ body {
   display: block;
 }
 
-header {
-  font-size: 1.3em;
-  text-align: center;
+header, .header-index {
   color: white;
-  font-style: italic;
   width: 100%;
-  padding: 1.5em;
   background-image: url(../images/servicio_con_banners.jpg);
   background-size: 100%;
   background-position: cover;
@@ -58,8 +54,12 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  font-size: 1.3em;
+  text-align: center;
+  font-style: italic;
+  padding: 1.5em;
 }
-header p {
+header p, .header-index p {
   -webkit-animation: fadeIn;
           animation: fadeIn;
   -webkit-animation-duration: 2s;
@@ -72,27 +72,16 @@ header p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #641E16;
   opacity: 0.5;
+  background: #641E16;
 }
 
 .header-index {
-  background-image: url(../images/servicio_con_banners.jpg);
-  background-size: 100%;
-  background-position: cover;
-  background-attachment: fixed;
-  position: relative;
-  overflow: hidden;
-  opacity: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-size: 1.4em;
-  color: white;
+  font-style: normal;
+  text-align: center;
   font-family: "Readex Pro", sans-serif;
   text-shadow: 3px 3px 13px black;
-  width: 100%;
   padding: 40px 150px;
   -webkit-animation: none;
           animation: none;
@@ -102,8 +91,8 @@ header p {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #fec759;
   opacity: 0.5;
+  background: #fec759;
 }
 
 .header-index > * {
@@ -229,8 +218,8 @@ article > * {
   padding: 0.5em;
   margin: 1em;
   font-size: 1.1em;
-  text-align: justify;
   color: white;
+  text-align: justify;
   text-shadow: 1px 1px 5px black;
   display: flex;
   flex-direction: row;

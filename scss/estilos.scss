@@ -1,6 +1,16 @@
 //variables: 
 $colorclaro: #fec759;
 $coloroscuro: #641E16;
+$overlay:(
+    posicionO: absolute,
+    anchoO: 100%,
+    altoO: 100%,
+    opacidadO: .5,
+);
+@mixin texto($color, $align){
+    color: $color;
+    text-align: $align;
+};
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kantumruy+Pro:wght@200&family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@500&family=Readex+Pro:wght@300&display=swap');
 
@@ -42,12 +52,8 @@ body{
 
 //header
 header{
-    font-size: 1.3em;
-    text-align: center;
     color: white;
-    font-style: italic;
     width: 100%;
-    padding: 1.5em;
     background-image: url(../images/servicio_con_banners.jpg);
     background-size: 100%;
     background-position: cover;
@@ -59,6 +65,12 @@ header{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    font-size: 1.3em;
+    text-align: center;
+    font-style: italic;
+    padding: 1.5em;
+    
     p{
         animation: fadeIn;
         animation-duration: 2s;
@@ -67,38 +79,29 @@ header{
     }
 }
 .overlay{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #641E16;
-    opacity: .5;
+    position: map-get($overlay, posicionO);
+    width: map-get($overlay, anchoO);
+    height: map-get($overlay, altoO);
+    opacity: map-get($overlay, opacidadO);
+    background: $coloroscuro;
 }
 .header-index{
-    background-image: url(../images/servicio_con_banners.jpg);
-    background-size: 100%;
-    background-position: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    opacity: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @extend header;
+
     font-size: 1.4em;
-    color: white;
+    font-style: normal;
+    text-align: center;
     font-family: 'Readex Pro', sans-serif;
     text-shadow: 3px 3px 13px black;
-    width: 100%;
     padding: 40px 150px;
     animation: none;
 }
 #overlayindex{
-    position: absolute;
-    width: 100%;
-    height: 100%;
+    position: map-get($overlay, posicionO);
+    width: map-get($overlay, anchoO);
+    height: map-get($overlay, altoO);
+    opacity: map-get($overlay, opacidadO);
     background:$colorclaro;
-    opacity: .5;
 }
 .header-index >*{
     padding-right: 0px;
@@ -219,8 +222,7 @@ article >*{
     padding: 0.5em;
     margin: 1em;
     font-size: 1.1em;
-    text-align: justify;
-    color: white;
+    @include texto(white, justify);
     text-shadow: 1px 1px 5px black;
     display: flex;
     flex-direction: row;
@@ -338,8 +340,8 @@ article >*{
     ;
     align-items:center;
     font-size: 1.1em;
-    color:white;
-    text-align: justify;
+    @include texto(white, justify);
+
     h3{
         grid-area: actividad;
         text-align: center;
