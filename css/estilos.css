@@ -218,9 +218,9 @@ article > * {
   padding: 0.5em;
   margin: 1em;
   font-size: 1.1em;
-  color: white;
+  color: #641E16;
   text-align: justify;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px white;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;

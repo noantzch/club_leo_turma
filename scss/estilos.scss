@@ -222,8 +222,9 @@ article >*{
     padding: 0.5em;
     margin: 1em;
     font-size: 1.1em;
-    @include texto(white, justify);
-    text-shadow: 1px 1px 5px black;
+    color: $coloroscuro;
+    text-align: justify;
+    text-shadow: 1px 1px 5px white;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
